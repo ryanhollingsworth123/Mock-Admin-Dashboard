@@ -1,75 +1,91 @@
-# React + TypeScript + Vite
+**User Management Dashboard**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, TypeScript-based admin dashboard built with React, showcasing core front-end development skills such as state management, component design, API integration, and responsive UI design.
 
-Currently, two official plugins are available:
+ **Project Overview**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a user management dashboard that simulates a real-world admin interface. It demonstrates practical React and TypeScript skills with a focus on:
 
-## React Compiler
+ -Fetching and managing user data from an API.
+ -Filtering users by name, email, and role.
+ -Sorting and paginating user lists.
+ -Updating user roles and active status.
+ -Responsive design for mobile and desktop.
+ -Dark mode support respecting browser settings.
+ -Local storage persistence of user changes.
+ -Modular, reusable component architecture.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Purpose:
+This project is designed to demonstrate skills relevant to front-end development roles, especially for creating dashboards, admin panels, or any application that requires managing and displaying structured data efficiently.
 
-Note: This will impact Vite dev & build performances.
+ **Features**
+1. Data Management
 
-## Expanding the ESLint configuration
+ -Fetches users from a public API (https://dummyjson.com/users).
+ -Allows updating user roles and active/inactive status.
+ -Local storage persistence ensures changes remain after page reload.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. Filtering & Searching
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ -Search users by name or email.
+ -Filter by role: Admin, Editor, Viewer.
+ -Filters are persistent across page reloads.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. Sorting
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ -Sort users by name, email, or other attributes.
+ -Ascending and descending sorting with visual indicators.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. Pagination
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ -Supports pagination to improve performance and user experience.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+5. Responsive Design
+
+ -Desktop-first layout: table view for wide screens.
+ -Mobile card view: stacked vertical cards for small screens.
+
+6. Dark Mode
+
+ -Automatically respects browser’s preferred color scheme.
+
+7. UI/UX
+
+ -Clean, modern styling with CSS modules.
+ -Hover effects, transitions, and dropdowns for actions.
+ -Accessible form controls and buttons.
+
+** Tech Stack**
+
+React + TypeScript |	Component-based front-end development and type safety
+CSS Modules	| Scoped, maintainable CSS
+Fetch API	| Data fetching and asynchronous operations
+Local Storage |	Persistent client-side storage
+Responsive Design |	Mobile-first / desktop-first adaptability
+ES6+ & Modern JS	| Clean, maintainable code practices
+
+ **Getting Started**
+ 
+Prerequisites:
+
+ -Node.js >= 18
+ -npm or yarn
+
+Installation:
+
+git clone https://github.com/yourusername/user-management-dashboard.git
+cd user-management-dashboard
+npm install
+npm run dev
+
+
+Open http://localhost:5173
+ to view in the browser.
+
+ **Future Enhancements**
+
+ -User authentication and role-based access control.
+ -Backend integration for permanent persistence.
+ -Additional table features: bulk actions, inline editing.
+ -Export user data (CSV/JSON).
+ -Unit and integration testing with Jest + React Testing Library.
