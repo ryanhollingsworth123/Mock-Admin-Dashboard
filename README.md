@@ -70,7 +70,7 @@ This project is designed to demonstrate skills relevant to front-end development
   
   -Accessible form controls and buttons.
 
-** Tech Stack**
+**Tech Stack**
 
 React + TypeScript |	Component-based front-end development and type safety
 
