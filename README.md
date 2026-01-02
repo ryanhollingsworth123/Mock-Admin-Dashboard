@@ -28,47 +28,47 @@ This project is designed to demonstrate skills relevant to front-end development
  **Features**
 1. Data Management
 
- -Fetches users from a public API (https://dummyjson.com/users).
- 
- -Allows updating user roles and active/inactive status.
- 
- -Local storage persistence ensures changes remain after page reload.
+  -Fetches users from a public API (https://dummyjson.com/users).
+  
+  -Allows updating user roles and active/inactive status.
+  
+  -Local storage persistence ensures changes remain after page reload.
 
 2. Filtering & Searching
 
- -Search users by name or email.
- 
- -Filter by role: Admin, Editor, Viewer.
- 
- -Filters are persistent across page reloads.
+  -Search users by name or email.
+  
+  -Filter by role: Admin, Editor, Viewer.
+  
+  -Filters are persistent across page reloads.
 
 3. Sorting
 
- -Sort users by name, email, or other attributes.
- 
- -Ascending and descending sorting with visual indicators.
+  -Sort users by name, email, or other attributes.
+  
+  -Ascending and descending sorting with visual indicators.
 
 4. Pagination
 
- -Supports pagination to improve performance and user experience.
+  -Supports pagination to improve performance and user experience.
 
 5. Responsive Design
 
- -Desktop-first layout: table view for wide screens.
- 
- -Mobile card view: stacked vertical cards for small screens.
+  -Desktop-first layout: table view for wide screens.
+  
+  -Mobile card view: stacked vertical cards for small screens.
 
 6. Dark Mode
 
- -Automatically respects browser’s preferred color scheme.
+  -Automatically respects browser’s preferred color scheme.
 
 7. UI/UX
 
- -Clean, modern styling with CSS modules.
- 
- -Hover effects, transitions, and dropdowns for actions.
- 
- -Accessible form controls and buttons.
+  -Clean, modern styling with CSS modules.
+  
+  -Hover effects, transitions, and dropdowns for actions.
+  
+  -Accessible form controls and buttons.
 
 ** Tech Stack**
 
