@@ -84,25 +84,6 @@ Responsive Design |	Mobile-first / desktop-first adaptability
 
 ES6+ & Modern JS	| Clean, maintainable code practices
 
- **Getting Started**
- 
-Prerequisites:
-
- -Node.js >= 18
- 
- -npm or yarn
-
-Installation:
-
-git clone https://github.com/yourusername/user-management-dashboard.git
-cd user-management-dashboard
-npm install
-npm run dev
-
-
-Open http://localhost:5173
- to view in the browser.
-
  **Future Enhancements**
 
  -User authentication and role-based access control.
