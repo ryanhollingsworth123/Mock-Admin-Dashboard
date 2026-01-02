@@ -1,0 +1,77 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+th, td {
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+}
+
+th {
+    background: var(--color-th);
+    font-weight: 600;
+    user-select: none;
+}
+
+tr:hover td {
+    background: var(--color-hover);
+}
+
+button {
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sortable {
+    cursor: pointer;
+    outline: 1px solid lightgrey;
+    outline-offset: -1px;
+}
+
+.sortable:hover {
+    background: var(--color-hover);
+}
+
+.headerContent {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sortArrow {
+    opacity: 0;
+    transform: translateY(-2px);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.sortArrowVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sortable:hover .sortArrow {
+    opacity: 0.5;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.hideMobile {
+    display: table-cell;
+}
+
+@media (max-width: 767px) {
+    .tableWrapper {
+        display: none;
+    }
+}

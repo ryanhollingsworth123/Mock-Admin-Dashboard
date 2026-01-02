@@ -1,0 +1,87 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+}
+
+.header {
+    margin-bottom: var(--space-md);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 30px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: lightgray;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+select {
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.filterRole {
+    height: 30px;
+    width: 10%;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+}
+
+.pageButton {
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: white;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pageButtonActive {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.pageButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .filterRole {
+        width: 50%;
+        height: 30px;
+        
+    }
+
+    .cardsWrapper {
+        display: block;
+    }
+
+    .userTable {
+        display: none;
+    }
+}
+
